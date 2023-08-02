@@ -32,9 +32,9 @@ class FlightCommand(val mmsst: MMSST) {
         try {
 
             val enabledMessage =
-                "<lang:commands.flight.enable:${mmsst.getPluginPrefix()}:${coloredDisplayName(target)}>"
+                "<lang:commands.flight.enable:'${mmsst.getPluginPrefix()}':'${coloredDisplayName(target)}'>"
             val disabledMessage =
-                "<lang:commands.flight.disable:${mmsst.getPluginPrefix()}:${coloredDisplayName(target)}>"
+                "<lang:commands.flight.disable:'${mmsst.getPluginPrefix()}':'${coloredDisplayName(target)}'>"
 
             if (commandSender != target && !commandSender.hasPermission("stardust.command.flight.others")) {
                 commandSender.sendMessage(
