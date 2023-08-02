@@ -11,8 +11,6 @@ import java.text.MessageFormat
 import java.util.*
 
 class LynxWrapper(private val translator: TranslationRegistry) : Translator {
-
-    private val translationRegistry: MutableMap<Locale, MutableMap<String, String>> = mutableMapOf()
     override fun name(): Key {
         return this.translator.name();
     }

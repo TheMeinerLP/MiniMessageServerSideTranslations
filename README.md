@@ -17,3 +17,11 @@ Current Output:
 ![img_3.png](img_3.png)
 Expected output: 
 ![img.png](img.png)
+
+---
+# Resolved ?
+Yes, the issue is resolved but the workaround is very dirty. Maybe we can open a PR on Adventure and Paper to have a native function of that.
+I think, this is now the go-to way to implement Server Side Translations. 
+Please use that as an example. Also, I added a java example for the Copy and Pasta Dudes(CopyAndPasta is an AntiPattern, you know ?).
+
+Thanks on @lynxplay, @yannicklamprecht and @joo200. Also on the discord kyori and devcord.
