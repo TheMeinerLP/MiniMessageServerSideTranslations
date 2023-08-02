@@ -9,6 +9,7 @@ import cloud.commandframework.meta.CommandMeta
 import cloud.commandframework.minecraft.extras.MinecraftHelp
 import cloud.commandframework.paper.PaperCommandManager
 import dev.themeinerlp.mmsst.commands.FlightCommand
+import dev.themeinerlp.mmsst.utils.LynxWrapper
 import net.kyori.adventure.key.Key
 import net.kyori.adventure.text.format.NamedTextColor
 import net.kyori.adventure.translation.GlobalTranslator
@@ -33,7 +34,7 @@ class MMSST : JavaPlugin() {
             registry.registerAll(locale, bundle, false)
         }
         registry.defaultLocale(supportedLocals.first())
-        GlobalTranslator.translator().addSource(registry)
+        GlobalTranslator.translator().addSource(LynxWrapper(registry))
 
         buildCommandSystem()
         registerCommands()
